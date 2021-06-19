@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/home.css" rel="stylesheet">
+
+</head>
+<body>
+  <%- include('nav.ejs') %>
+<form action="/filter" method="GET">
+<label style="color: beige;" for="filter">All books:</label>
+<select id ='category' name='category'>
+ <option  >All books</option>
+  <option value="IT">IT</option>    
+  <option value="PHYSICS">Physics</option>
+  <option value="chemistry">chemistry</option>
+  
+</select>
+
+<button type="submit" id="submit">filter</button>
+</form>
+ <section class="parent-sectio">
+   <% for (let i=0; i < data.length; i++){ %>
+        <div class="main-div">
+            
+            <img src="<%=data[i]['pic'] %>" alt="">
+             
+                <p><%= data[i]['name'] %></p>
+                <a  href="/product/<%= data[i].id %>"><button>Details</button></a>
+         
+        </div>
+        <% } %> 
+
+  </section>
+  <!--
+<section>
+    
+  <div class="allBks">
+    
+      <div class="container1">
+        
+      <div class="fstBook">
+        
+          <img src="/styles/it.jpg" alt="IT"><br>
+          <p>Hello World</p>
+          <a href="/product/:id"><button>Details</button> </a>
+   
+      </div>
+      <div class="sndBook">
+        
+          <img src="/styles/chem.jpg" alt="chry"><br>
+          <p>ORGANIC Chemistry</p>
+          <a href="/product"><button>Details</button> </a>
+          
+      </div>
+  </div>
+  <div class="container2">
+      <div class="thrdBook">
+      
+          <img src="/styles/phx.jpg" alt="phcs"><br>
+          <p>Advanced Physics</p>
+         <a href="/product"><button>Details</button> </a>
+       
+      </div>
+      <div class="frthBook">
+       
+          <img src="/styles/it2.jpg" alt="IT2"><br>
+          <p>JavaScript: The Good Parts</p>
+          <a href="/product"><button>Details</button> </a>
+            
+            
+      </div>
+  </div>
+  </div>
+  </section>-->
+
+
+</body>
+</html>

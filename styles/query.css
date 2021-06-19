@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(17, 16, 16);
+    color: wheat;
+}
+h1{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+form{
+    position: absolute;
+    left: 42%;
+    top: 20%;
+    
+
+}
+div{
+    padding: 50px;
+}
+.first-input,.second-input,.third-input, input{
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    width: 120%;
+    padding-left: 1.2em;
+    
+}
+#button{
+    position: absolute;
+    left: 35%;
+    top: 120%;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+}
+#button:hover{
+    background-color:rgb(58, 56, 56);
+    color: wheat;
+    cursor: pointer;
+}

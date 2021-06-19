@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+  }
+  #category{
+    width: 400px;
+}
+
+form{
+    position: absolute;
+    top: 100px;
+    left: 30%;
+}
+#submit{
+    position: relative;
+    top: 60px;
+    right: 50%;
+    background-color: rgb(58, 56, 56);
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#submit:hover {
+    background-color: rgb(53, 46, 46);
+    color: #000;
+  }
+
+
+  body {
+    background-color:rgb(17, 16, 16);
+    margin: 0;
+    padding: 0;
+  }
+
+.allBks{
+  position: relative;
+  width: auto;
+  border: 0px;
+  display: flex;
+justify-content: space-between;
+text-align: center;
+margin-bottom: 40px;
+margin-left: 25%;
+margin-right: 25%;
+}
+.sndBook, .frthBook {
+  margin-top: 40px;
+}
+.allBks img {
+  width: 250px;
+  height: 300px;
+}
+.allBks p {
+  font-weight: bold;
+}
+.allBks button {
+  width: 100%;
+  height: 30px;
+  background-color:rgb(24, 21, 21);
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  border-radius: 4px;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+}
+.fstBook, .sndBook, .thrdBook, .frthBook {
+
+background-color:rgb(17, 16, 16);
+}
+.allBks button:hover {
+  background-color: rgb(48, 48, 48);
+  color: #000;
+}
+.allBks button:active {
+  transform: translateY(4px);
+}
+section{
+    position: relative;
+    top: 230px;
+}
+.parent-sectio{
+  position: relative;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+ .main-div img{
+  width: 250px;
+  height: 400px;
+  
+
+}
+p{
+  font-weight: bolder;
+}
+.main-div  a button{
+  width: 100%;
+  height: 30px;
+  background-color:rgb(24, 21, 21);
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  border-radius: 4px;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+}
+.main-div  a button:hover {
+  background-color: rgb(73, 63, 63);
+  color: #000;
+}
+
+.main-div a button:active{
+  
+  visibility:hidden;
+}

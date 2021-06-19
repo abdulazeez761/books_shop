@@ -1,0 +1,33 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    z-index: 1;
+
+}
+
+/* this is style of  navigation bar section */
+header
+{
+    width: 100%;
+    display: flex;
+    height:50px;
+    justify-content: space-around;
+    background-color:white;
+    padding-top: 15px;
+    position: sticky;
+    top:0;
+    word-spacing: 45px;
+    box-shadow:  -5px -5px 10px blue; 
+    z-index: 1000;  
+}   
+
+nav a {
+    color: black;
+    text-decoration: none ;
+
+}
+nav a:hover{
+    color: #312e36;
+}
